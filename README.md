@@ -1,4 +1,4 @@
-Demo of cloud provisioning from .map file into Softlayer and install application servers using grains, and mines.
+Demo of cloud provisioning from .map file and install application servers using grains, and mines.
 - 3 ubuntu vms
   - 2 appservers
   - 1 nginx reverse proxy
@@ -11,3 +11,5 @@ packages on the servers.
 
 Once completed, determine the public IP of the nginx proxy, and paste that into a web browser.  Refresh the page and you'll
 see the proxy bounce back and forth to the different ip addresses of the app servers
+
+taken from https://www.digitalocean.com/community/tutorials/how-to-use-salt-cloud-map-files-to-deploy-app-servers-and-an-nginx-reverse-proxy
