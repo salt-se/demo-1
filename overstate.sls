@@ -1,13 +1,13 @@
 appservers:
   match: 'app*'
   sls:
-    - salt://awesome-app.app
+    - awesome-app.app
 rproxy:
   match: 'nginx-r*'
   require:
     - appservers
   sls:
-    - salt://nginx.rproxy
+    - nginx.rproxy
 all:
   match: '*'
   require:
